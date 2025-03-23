@@ -31,16 +31,12 @@ const footerLinks = {
   ],
   company: [
     { name: 'About Us', href: '/about' },
-    { name: 'Privacy Policy', href: '/privacy' },
     { name: 'Terms of Service', href: '/terms' },
-    { name: 'Cookie Policy', href: '/cookies' },
   ],
 };
 
 const socialLinks = [
-  { name: 'GitHub', href: 'https://github.com/utility-belt' },
-  { name: 'Twitter', href: 'https://twitter.com/utility-belt' },
-  { name: 'LinkedIn', href: 'https://linkedin.com/company/utility-belt' },
+  { name: 'GitHub', href: 'https://github.com/lavaraju7/utility-belt' },
 ];
 
 export default function Footer() {
@@ -134,14 +130,8 @@ export default function Footer() {
               © {new Date().getFullYear()} Utility Belt. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
-                Privacy Policy
-              </Link>
               <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Terms of Service
-              </Link>
-              <Link href="/cookies" className="text-gray-400 hover:text-white text-sm transition-colors">
-                Cookie Policy
               </Link>
             </div>
           </div>
