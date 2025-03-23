@@ -9,6 +9,7 @@ import {
 } from "@heroicons/react/24/outline";
 import Footer from '@/components/Footer';
 import { Suspense } from 'react';
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -66,6 +67,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <Toaster position="bottom-right" />
+        <Analytics />
       </body>
     </html>
   );
