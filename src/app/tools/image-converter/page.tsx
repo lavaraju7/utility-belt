@@ -20,7 +20,10 @@ export default function ImageConverter() {
   const [targetFormat, setTargetFormat] = useState('jpeg');
   const [converting, setConverting] = useState(false);
 
-  const handleFileSelect = (selectedFile: File) => {
+  const handleFileSelect = (files: File[]) => {
+    if (files.length === 0) return;
+    
+    const selectedFile = files[0];
     if (!selectedFile.type.startsWith('image/')) {
       toast.error('Please upload an image file');
       return;

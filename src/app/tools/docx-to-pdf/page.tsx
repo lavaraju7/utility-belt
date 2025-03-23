@@ -9,7 +9,10 @@ export default function DocxToPdf() {
   const [file, setFile] = useState<File | null>(null);
   const [converting, setConverting] = useState(false);
 
-  const handleFileSelect = (selectedFile: File) => {
+  const handleFileSelect = (files: File[]) => {
+    if (files.length === 0) return;
+    
+    const selectedFile = files[0];
     if (selectedFile.type !== 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') {
       toast.error('Please upload a DOCX file');
       return;
