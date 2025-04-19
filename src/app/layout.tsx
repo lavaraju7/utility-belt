@@ -16,7 +16,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Utility Belt - Your All-in-One Toolkit",
   description: "Your all-in-one toolkit for file conversions, data transformations, and utility functions. Fast, secure, and easy to use.",
+  verification: {
+    google: "RCP11pq7PelD-YDRFsV6SwuELJZLsfEvtDE5mwkF6zk", // ✅ Put your code here
+  },
 };
+
 
 function LoadingSpinner() {
   return (
