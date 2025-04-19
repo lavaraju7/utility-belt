@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://utility-belt-2c1r.vercel.app/sitemap.xml
